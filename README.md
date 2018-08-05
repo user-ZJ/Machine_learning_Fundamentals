@@ -41,3 +41,21 @@ sudo swapon /mnt/1024Mb.swap
 
 参考：http://www.tensorfly.cn/tfdoc/get_started/os_setup.html
 
+
+# 两类问题
+
+    分类：把数据划分成不同的类别
+    回归：建立数据间的连续关系
+
+# 方差和协方差区别
+均值：
+![](image/junzhi.png)
+方差：
+![](image/fangcha.png)
+协方差：
+![](image/xiefangcha.png)
+
+方差和协方差区别：
+1. 方差的计算公式，我们知道方差的计算是针对一维特征，即针对同一特征不同样本的取值来进行计算得到；而协方差则必须要求至少满足二维特征。可以说方差就是协方差的特殊情况。　
+2. 方差和协方差的除数是n-1，这样是为了得到方差和协方差的无偏估计
+
