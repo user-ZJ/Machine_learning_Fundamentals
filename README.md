@@ -4,6 +4,7 @@
 1. 安装oracle版本jdk1.8 下载地址http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
 2. 安装Python3及tensorflow依赖包
 sudo apt-get install python-pip python-dev python-numpy swig
+pip install protobuf mock
 3. 安装Bazel
 >源码安装
 $ git clone https://github.com/bazelbuild/bazel.git
