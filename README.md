@@ -95,6 +95,36 @@ https://github.com/user-ZJ/Supervised-learning/tree/master/%E7%BA%BF%E6%80%A7%E5
 https://github.com/user-ZJ/Supervised-learning/tree/master/%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92
 
 
+## 标准化
+数据的标准化（normalization）是将数据按比例缩放，使之落入一个小的特定区间。  
+在某些比较和评价的指标处理中经常会用到，去除数据的单位限制，将其转化为无量纲的纯数值，便于不同单位或量级的指标能够进行比较和加权。其中最典型的就是数据的**归一化**处理，即将数据统一映射到[0,1]区间上。  
+标准化方法：  
+1. 最小－最大规范化（线性变换） 
+> y=((x-MinValue)/(MaxValue-MinValue))(new_MaxValue-new_MinValue)+new_minValue)   
+2. z-score规范化（或零－均值规范化）   
+> y=(x-X的平均值)／X的标准差   
+> 当X的最大值和最小值未知，或孤立点左右了最大－最小规范化时，该方法有用   
+3. 小数定标规范化  
+> 通过移动X的小数位置来进行规范化   
+>  y= x/10的j次方　　（其中，j为使得Max(|y|) <1的最小整数）
+4. 对数Logistic模式  
+>  新数据=1/(1+e^(-原数据))   
+5. 模糊量化模式  
+> 新数据=1/2+1/2sin[pi/（极大值-极小值）*(X-(极大值-极小值)/2)] 
+6. batch normalization
+
+## 归一化
+归一化的目标是：  
+1 把数变为[0,1]之间的小数：把数据映射到0～1范围之内处理，更加便捷快速，应该归到数字信号处理范畴之内。   
+2 把有量纲表达式变为无量纲表达式：归一化是一种简化计算的方式，即将有量纲的表达式，经过变换，化为无量纲的表达式，成为纯量。   
+归一化方法：  
+1. 线性转换   
+> y=(x-MinValue)/(MaxValue-MinValue)   
+2. 对数函数转换  
+> y=log10(x)  
+3. 反余切函数转换   
+> y=atan(x)*2/PI
+
 ## 熵
 参考：https://blog.csdn.net/tsyccnh/article/details/79163834  
 
